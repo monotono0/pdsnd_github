@@ -27,10 +27,15 @@ def get_filters():
         # If the entered value is not valid, print an error message and continue loop.
         print('Invalid entry. Please type in the name of the given cities.')
 
+    # User has to choose a month to filter by or all for no filter.
+    # Define list of month
     month_list = ('all', 'january', 'february', 'march', 'april', 'may', 'june')
+    # Loop until user enters a valid month.
     while True:
         try:
+            # Prompt user for month input and convert it to an integer.
             month = input('Choose the month, you want information about or choose "all": ').lower()
+            # Check if input is in the valid range and exit loop if it is valid.
             if month in month_list:
                 if month != 'all':
                     month = month_list.index(month)
@@ -38,8 +43,10 @@ def get_filters():
                     month = 0
                 break
             else:
+                # If the entered value is not in valid range, print an error message and continue loop.
                 print('Invalid entry. Please type in january, february, march, april, may, june or all.')
         except ValueError:
+            # If the entered value is not valid, print an error message and continue loop.
             print('Invalid value.')
             
 
