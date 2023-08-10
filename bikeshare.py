@@ -20,6 +20,11 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
+    while True:
+        city = input('Please enter a city (Chicago, New York City or Washington): ').lower()
+        if city in CITY_DATA:
+            break
+        print('Invalid entry. Please type in the name of the given cities.')
 
 def load_data(city, month, day):
     """
