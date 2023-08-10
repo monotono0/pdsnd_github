@@ -26,6 +26,21 @@ def get_filters():
             break
         print('Invalid entry. Please type in the name of the given cities.')
 
+    month_list = ('all', 'january', 'february', 'march', 'april', 'may', 'june')
+    while True:
+        try:
+            month = input('Choose the month, you want information about or choose "all": ').lower()
+            if month in month_list:
+                if month != 'all':
+                    month = month_list.index(month)
+                else: 
+                    month = 0
+                break
+            else:
+                print('Invalid entry. Please type in january, february, march, april, may, june or all.')
+        except ValueError:
+            print('Invalid value.')
+
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
