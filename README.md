@@ -20,8 +20,16 @@ This Python script allows users to explore bikeshare data for three cities of th
 * The script offers a dynamic terminal experience.
 
 ### Dependencies
-**Python**: This script is written in Python and requires a Python environment to run. 
+**Python**: This script is written in Python and requires a Python environment to run.
 **pandas**: Is used for data manipulation – check out more about pandas [here] (https://pandas.pydata.org/).
+
+### How to run:
+1. Ensure you have Python and Pandas installed.
+2. Clone or download the repository.
+3. Open your terminal or command prompt.
+4. Navigate to the directory containing the files.
+5. Run the script.
+6. Follow the on-screen prompts to filter the data and view the statistics.
 
 ### Credits
 https://stackoverflow.com/questions/29096381/num-day-to-name-day-with-pandas
