@@ -28,7 +28,7 @@ This Python script allows users to explore bikeshare data for three cities of th
 2. Clone or download the repository.
 3. Open your terminal or command prompt.
 4. Navigate to the directory containing the files.
-5. Run the script.
+5. Run the script: `python <script name>.py`If you have not changed the name run: `python bikeshare.py`
 6. Follow the on-screen prompts to filter the data and view the statistics.
 
 ### Credits
