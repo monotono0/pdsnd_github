@@ -17,10 +17,14 @@ def get_filters():
     """
     print("Hello! Let\'s explore some US bikeshare data!")
 
+    # User has to choose a city to filter by.
+    # Loop until user enters a valid city abbreviation.
     while True:
+        # Prompt user for city abbreviation and exit loop if it is a valid one.
         city = input('Please enter a city (Chicago, New York City or Washington): ').lower()
         if city in CITY_DATA:
             break
+        # If the entered value is not valid, print an error message and continue loop.
         print('Invalid entry. Please type in the name of the given cities.')
 
     month_list = ('all', 'january', 'february', 'march', 'april', 'may', 'june')
