@@ -37,4 +37,5 @@ https://stackoverflow.com/questions/319426/how-do-i-do-a-case-insensitive-string
 https://www.geeksforgeeks.org/python-find-most-frequent-element-in-a-list/
 https://stackoverflow.com/questions/50866850/ask-user-to-continue-viewing-the-next-5-lines-of-data
 https://chat.openai.com/?model=gpt-4
+https://udacity.github.io/git-styleguide/
 
