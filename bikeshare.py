@@ -15,7 +15,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print("Hello! Let\'s explore some US bikeshare data!")
  
     print('-'*40)
     return city, month, day
@@ -40,7 +40,7 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
-    print('\nCalculating The Most Frequent Times of Travel...\n')
+    print("\nCalculating The Most Frequent Times of Travel...\n")
     start_time = time.time()
 
     # display the most common month
@@ -59,7 +59,7 @@ def time_stats(df):
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
-    print('\nCalculating The Most Popular Stations and Trip...\n')
+    print("\nCalculating The Most Popular Stations and Trip...\n")
     start_time = time.time()
 
     # display most commonly used start station
@@ -78,7 +78,7 @@ def station_stats(df):
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
-    print('\nCalculating Trip Duration...\n')
+    print("\nCalculating Trip Duration...\n")
     start_time = time.time()
 
     # display total travel time
@@ -94,7 +94,7 @@ def trip_duration_stats(df):
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
-    print('\nCalculating User Stats...\n')
+    print("\nCalculating User Stats...\n")
     start_time = time.time()
 
     # Display counts of user types
@@ -120,7 +120,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input("\nWould you like to restart? Enter yes or no.\n")
         if restart.lower() != 'yes':
             break
 
